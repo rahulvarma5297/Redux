@@ -1,6 +1,7 @@
 import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
 import { incNumber, decNumber } from "./actions/index";
+import Form from "./Components/Form";
 
 function App() {
   const count = useSelector((state) => state.changeTheNumber);
@@ -24,6 +25,8 @@ function App() {
           +
         </button>
       </div>
+
+      {/* <Form /> */}
     </div>
   );
 }
